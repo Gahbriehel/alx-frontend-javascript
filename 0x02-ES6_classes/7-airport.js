@@ -12,6 +12,7 @@ export default class Airport {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
+    this._name = name;
   }
 
   get code() {
@@ -22,6 +23,7 @@ export default class Airport {
     if (typeof code !== 'string') {
       throw new TypeError('Code must be a string');
     }
+    this._code = code;
   }
 
   toString() {
