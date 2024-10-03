@@ -1,4 +1,4 @@
 export default function uploadPhoto(filename) {
-  let fileName = filename;
-  return Promise.reject(`${fileName} cannot be processed`);
+  const fileName = filename;
+  return Promise.reject(Error`${fileName} cannot be processed`);
 }
