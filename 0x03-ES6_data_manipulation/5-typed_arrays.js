@@ -5,7 +5,7 @@ export default function createInt8TypedArray(length, position, value) {
   try {
     int8View.setInt8(position, value);
   } catch (err) {
-    throw new Error("Position outside range");
+    throw new Error('Position outside range');
   }
   return int8View;
 }
